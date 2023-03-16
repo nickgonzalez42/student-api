@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
       password: params[:password],
       password_confirmation: params[:password_confirmation],
     )
-    if student.save
+    if student.save!
       render json: { message: "Student created successfully" }, status: :created
     else
       render json: { errors: student.errors.full_messages }, status: :bad_request
