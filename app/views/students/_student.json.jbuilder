@@ -12,3 +12,4 @@ json.experiences student.experiences
 json.educations student.educations
 json.capstones student.capstones
 json.skills student.skills
+json.id student.id

@@ -35,6 +35,7 @@ class StudentsController < ApplicationController
 
   def update
     @student = Student.find_by(id: params["id"])
+    p @student
     @student.update(
       first: params["first"] || @student.first,
       last: params["last"] || @student.last,
